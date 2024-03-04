@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boletim Escolar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="entrada">
+            <table class="informacao-aluno" cellspacing="5">
+                <caption><b>Boletim Escolar</b></caption>
+                <tr>
+                    <th rowspan="2">Nome</th>
+                    <th colspan="4">Notas</th>
+                </tr>
+                <tr class="notas">
+                    <th>1° Bimestre</th>
+                    <th>2° Bimestre</th>
+                    <th>3° Bimestre</th>
+                    <th>4° Bimestre</th>
+                </tr>
+                <tr>
+                    <td><input type="text" id="alunoNome"></td>
+                    <td><input type="text" id="b1"></td>
+                    <td><input type="text" id="b2"></td>
+                    <td><input type="text" id="b3"></td>
+                    <td><input type="text" id="b4"></td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <input type="button" value="Adicionar Aluno" onclick="Sub()">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="saida">
+            <table class="conclusao" cellspacing="5">
+                <caption><b>Resultados</b></caption>
+                <tr>
+                    <th>Nome</th>
+                    <th>Média</th>
+                    <th>Situação</th>
+                </tr>
+                <!-- As linhas com resultados serão adicionadas aqui pelo JavaScript -->
+            </table>
+        </div>
+
+        <div class="media-geral">
+            <p id="mediaGeralTurma">Média Geral da Turma: </p>
+        </div>
+        <div class="alunos-abaixo-media">
+            <p id="alunosAbaixoMedia">Alunos com média abaixo da média geral:</p>
+            <ul id="listaAlunosAbaixoMedia">
+                <!-- Itens serão adicionados aqui pelo JavaScript -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>

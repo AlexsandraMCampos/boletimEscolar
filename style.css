@@ -1,0 +1,46 @@
+   @import url('https://fonts.cdnfonts.com/css/pt-mono');
+
+*{
+ font-family:'Pt Mono', sans-serif;
+ color:blue;
+
+} 
+body{
+     background-image:url(./img/quadro-bco-lapis.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;             
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-left:150px;
+}
+
+input[type=text], [type=button] {
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 1px 1px 2px #333333;
+    -moz-box-shadow: 1px 1px 2px #333333;
+    -webkit-box-shadow: 1px 1px 2px #333333;
+     background: #cccccc;
+    border:none;
+    width: 150px;
+    gap:5px;
+}
+
+input[type=button]{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+
+
+    
+    
